@@ -24,4 +24,8 @@ erl_crash.dump
 
 # Ignore package tarball (built via "mix hex.build").
 soscar-*.tar
-
+docker-compose.yml
+Dockerfile
+mix.lock
+.elixir_ls
+deps

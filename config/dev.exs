@@ -2,10 +2,10 @@ import Config
 
 # Configure your database
 config :soscar, Soscar.Repo,
-  username: "postgres",
-  password: "postgres",
-  hostname: "localhost",
-  database: "soscar_dev",
+  username: "soscar_dev",
+  password: "soscar_dev",
+  hostname: "172.17.0.1",
+  database: "soscar_db",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
@@ -19,7 +19,7 @@ config :soscar, Soscar.Repo,
 config :soscar, SoscarWeb.Endpoint,
   # Binding to loopback ipv4 address prevents access from other machines.
   # Change to `ip: {0, 0, 0, 0}` to allow access from other machines.
-  http: [ip: {127, 0, 0, 1}, port: 4000],
+  http: [ip: {0, 0, 0, 0}, port: 4000],
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
